@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(197, 253, 255);
+}
+.title{
+    margin-top: 20px;
+}
+.b1,.b2 { 
+    color: rgb(17, 232, 160);
+    font-weight: 600;
+    font-size: 2rem;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+}
+.amountbox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.billbox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(154, 153, 153);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.test{
+    display: flex;
+}
+.billInput{
+    height: 45px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1.3rem;
+    color: rgb(15, 116, 85);
+    padding-left: 15px;
+    text-align: right;
+    border-left: hidden ;
+    font-weight: 600;
+}
+.dollar{
+    padding-left: 2px;
+    padding-top: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 45px;
+    background-color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(154, 153, 153);
+    cursor: pointer;
+    border: 2px solid black;
+    border-right:hidden ;
+}
+
+.test:hover .dollar {
+    border-top: 2px solid rgb(14, 216, 149);
+    border-left: 2px solid rgb(14, 216, 149);
+    border-bottom: 2px solid rgb(14, 216, 149);
+}
+
+.test:hover .billInput {
+    border-top: 2px solid rgb(14, 216, 149);
+    border-bottom: 2px solid rgb(14, 216, 149);
+    border-right: 2px solid rgb(14, 216, 149);
+}
+.tipbox{
+    display: grid;
+    grid-template-columns: repeat(1fr,3);
+}
+.tip_btn{
+    cursor: pointer;
+    background-color: rgb(15, 116, 85);
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.tip_btn:hover{
+    background-color: rgb(14, 192, 216);
+}
+.customeTipInput{
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.customeTipInput:hover{
+    border: 2px solid;
+    border-color: rgb(14, 192, 216);
+}
+.peoplebox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.billInput{
+    height: 45px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1.3rem;
+    color: rgb(15, 116, 85);
+    padding-left: 15px;
+    text-align: right;
+    border-left: hidden ;
+    font-weight: 600;
+}
+.billingbox{
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: rgb(15, 116, 85);
+}
+.tipAmount{
+    display: flex;
+    justify-content: space-between;
+}
+.tipdes{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+.tipdes1{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: white;
+}
+.tipdes2{
+    font-weight: 500;
+    font-size: 0.94rem;
+    color: rgb(159, 159, 159);
+}
+.tipNum{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(25, 172, 165);
+}
+.totalAmount{
+    display: flex;
+    justify-content: space-between;
+}
+.totaldes{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.totaldes1{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: white;
+}
+.totaldes2{
+    font-weight: 500;
+    font-size: 0.94rem;
+    color: rgb(159, 159, 159);
+}
+.totalNum{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(25, 172, 165);
+}
+.reset{
+    color: rgb(15, 116, 85);
+    background-color: rgb(14, 192, 216);
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-top: 70px;
+    height: 50px;
+    text-align: center;
+}
