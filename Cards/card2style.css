@@ -1,0 +1,83 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: none;
+    min-height: 700px;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 350px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 30%;
+    width: 100%;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    width: 75%;
+}
+#amountbox{
+    height: 10%;
+    width: 90%;
+    background-color: aqua;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.leftbox{
+    display: flex;
+    gap: 15px;
+    height: 100%;
+    align-items: center;
+}
+.imagebox img{
+    height: 3rem;
+    width: 3rem;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    
+}
+button{
+    width: 90%;
+    height: 10%;
+    background-color: cadetblue;
+    color: white;
+    border-radius:15px ;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.cancelbox a{
+
+    text-decoration: none;
+    color: #a39fab;
+    font-weight: 700;
+    font-size: larger;
+}
+.cancelbox:hover a{
+    color: red;
+}
+

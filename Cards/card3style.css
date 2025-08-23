@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle, rgba(174, 235, 238, 0.77) 0%, rgba(148, 187, 233, 0.69) 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    height: 500px;
+    width: 800px;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#leftbox {
+    flex: 1;
+    background-color: #4b004b;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+#leftbox h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#leftbox p {
+    font-size: 16px;
+    color: #dddddd;
+}
+
+#stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#stats div h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#stats div p {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+#rightbox {
+    flex: 1;
+    background-color: #0c1023;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rightbox img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
