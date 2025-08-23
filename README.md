@@ -4,7 +4,7 @@ This repository contains a collection of my web development projects built with 
 Each project is in its own folder with separate images and code files.  
 
 ## 📂 Projects Included
-- **E-Commerce Website** – Product listings, categories, and shopping cart.  
+- **AmazoneClone** – Product listings, categories, and shopping cart.  
 - **Study Sync (Educational Website)** – Clean layout with easy navigation for students.  
 - **Portfolio Website** – Personal portfolio showcasing my skills.  
 - **Blog Layout** – Simple, responsive blog design.  
@@ -14,7 +14,7 @@ Each project is in its own folder with separate images and code files.
 ## 📁 Folder Structure
 WebDev-Projects/
 │
-├── E-Commerce-Website/
+├── AmazoneClone/
 │ ├── index.html
 │ ├── style.css
 │ ├── script.js
