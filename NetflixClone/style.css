@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("background1.jpg");
+    height: 70vh;
+    background-position: center center;
+    background-repeat:no-repeat ;
+    background-size: max(1280px,100vw);
+    position: relative;
+}
+
+.main .box{
+    position: absolute;
+    top: 0%;
+    height: 70vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+}
+
+nav{
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+nav img{
+    width: 115px;
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    height:calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 20px;
+    padding:0 30px;
+}
+
+.hero> :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(58, 58, 58);
+}
+
+.btn{
+    font-weight: 600;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.142);
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.main input{
+    padding:7px 101px 8px 14px;
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(222, 222, 222, 0.5);
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.secImg{
+    position: relative;
+}
+
+.secImg img{
+    width: 30vw;
+}
+
+.secImg video{
+    position: absolute;
+    width: 350px;
+    top: 51px;
+    right: 0;
+}
+
+.first > div:nth-child(1){
+    font-size: 50px;
+    font-weight: bolder;
+}
