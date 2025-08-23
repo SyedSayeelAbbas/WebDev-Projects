@@ -1,0 +1,158 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+}
+h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: rgb(10, 117, 184);
+    margin-bottom: 50px;
+}
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+.agebox{
+    display: flex;
+    gap: 20px;
+}
+.agebox label{
+    padding-top: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.ageInput{
+    width: 230px;
+    height: 40px;
+    padding-left: 15px;
+    margin-left: 23px;
+    border-radius: 15px;
+    border-color: rgb(230, 230, 230);
+}
+.weightbox{
+    display: flex;
+    gap: 20px;   
+}
+.weightbox1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.weightbox label{
+    padding-top: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.weightbox div{
+    padding-top: 2px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.weightInput{
+    width: 230px;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 15px;
+    border-color: rgb(230, 230, 230);
+}
+.heightbox{
+    display: flex;
+    gap: 20px;   
+}
+.heightbox1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.heightbox label{
+    padding-top: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.heightbox div{
+    padding-top: 2px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.heightInput{
+    width: 230px;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 15px;
+    border-color: rgb(230, 230, 230);
+}
+.genderBox{
+    display: flex;
+    gap: 25px;
+    margin-left: 30px;
+}
+.genderBox button{
+    font-size: 1.3rem;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(92, 161, 205);
+    border: hidden;
+}
+.calculateBtn button{
+    font-size: 1.3rem;
+    color: white;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    background-color:rgb(10, 117, 184);
+    border: hidden;
+}
+.resultbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.genderBox button.selected {
+    background-color: rgb(10, 117, 184);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* Input field hover/focus improvements */
+input:focus, input:hover {
+    border: 2px solid rgb(10, 117, 184);
+    outline: none;
+}
+
+/* Make result text bold and colorful */
+.bmi2, .result2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(10, 117, 184);
+}
+
+/* Add slight hover animation to Calculate button */
+.calculateBtn button:hover {
+    background-color: rgb(7, 99, 157);
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
