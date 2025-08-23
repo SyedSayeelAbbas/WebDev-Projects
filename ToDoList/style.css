@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 11%, rgba(9, 9, 121, 1) 44%, rgba(0, 168, 201, 1) 87%);;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    width: 440px;
+    height: 550px;
+    background-color: white;
+    color: #010105;
+    border-radius: 10px;
+}
+.title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+.input {
+    display: flex;
+    gap: 10px;
+}
+.input input{
+    border-color: rgb(203, 201, 201);
+    border-radius: 3px;
+    width: 320px;
+    height: 50px;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+.input button{
+    border-radius: 10px;
+    font-size: 2rem;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(134, 6, 136);
+}
+.submit{
+    cursor: pointer;
+}
+.listtodo{
+    height: 300px;
+    width: 380px;
+}
+.contentContainer{
+    display: flex;
+    margin-top: 10px;
+}
+.content{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 330px;
+    height: 50px;
+    font-size: 1.1rem;
+    background-color: rgb(162, 162, 162);
+    color: black;
+}
+.remove{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: red;
+    font-size: 2rem;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.clearall{
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color: rgb(134, 6, 136);
+    border-radius: 5px;
+    cursor: pointer;
+}
