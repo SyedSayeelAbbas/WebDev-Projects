@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <style>
+    *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: aquamarine;
+    }
+    .container{
+      width: 400px;
+      height: 400px;
+      background-color: white;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: center; */
+    }
+    .number{
+      padding-top: 20px;
+      text-align: center;
+      height: 200px;
+      width: 100%;
+      font-size: 10rem;
+      font-weight: bold;
+    }
+    .control{
+      margin-top: 50px;
+      display: flex;
+      gap: 50px;
+    }
+    .increase button{
+      background-color: darkorange;
+      border-radius: 5px;
+      width: 100px;
+      font-size: 2rem;
+      height: 40px;
+      padding-bottom: 20px;
+    }
+    .decrease button{
+      background-color: darkorange;
+      border-radius: 5px;
+      width: 100px;
+      font-size: 2rem;
+      height: 40px;
+      padding-bottom: 20px;
+    }
+    .reset button{
+      background-color: darkorange;
+      border-radius: 5px;
+      margin-top: 10px;
+      width: 100px;
+      font-size: 1.5rem;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="number">1</div>
+    <div class="control">
+      <div class="increase"><button>+</button></div>
+      <div class="decrease"><button>-</button></div>
+    </div>
+    <div class="reset"><button>Reset</button></div>
+  </div>
+  <script>
+    let number = document.querySelector(".number");
+    let increase = document.querySelector(".increase");
+    let decrease = document.querySelector(".decrease");
+    let reset = document.querySelector(".reset");
+
+    let count = 0;
+
+    function down(){
+      if(count >0){
+      count--;
+      number.textContent=count;}
+      else{
+        alert("Canot decrese in negative")
+      }
+    }
+    function up(){
+      count++;
+      number.textContent=count;
+    }
+    function re(){
+      count=0;
+      number.textContent=count;
+    }
+
+    increase.addEventListener("click",up);
+    decrease.addEventListener("click",down);
+    reset.addEventListener("click",re);
+  </script>
+</body>
+</html>
