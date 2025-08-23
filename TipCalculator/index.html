@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip-Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        <div class="b1">S P L I</div>
+        <div class="b2">T T E R</div>
+    </div>
+    <div class="container">
+        <div class="amountbox">
+            <div class="billbox">
+                <label for="bill">Bill</label>
+                <div class="test">
+                    <div class="dollar">&dollar;</div><input type="number" name="bill" required id="bill"
+                    class="billInput">
+                </div>
+            </div>
+            <div class="tipbox">
+                <label for="tip">Select Tip &percnt;</label>
+                <div class="tipgrid">
+                    <button class="tip_btn1 tip_btn">5&percnt;</button>
+                    <button class="tip_btn2 tip_btn">10&percnt;</button>
+                    <button class="tip_btn3 tip_btn">15&percnt;</button>
+                    <button class="tip_btn4 tip_btn">25&percnt;</button>
+                    <button class="tip_btn5 tip_btn">50&percnt;</button>
+                    <input type="text" placeholder="CUSTOM" class="customeTipInput">
+                </div>
+            </div>
+            <div class="peoplebox">
+                <label for="people">Number of People</label>
+                <div class="test">
+                    <div class="dollar">&#128100;</div><input type="number" name="people" required id="people"
+                        class="billInput noOfPeople">
+                </div>
+            </div>
+        </div>
+        <div class="billingbox">
+            <div class="tipAmount">
+                <div class="tipdes">
+                    <div class="tipdes1">Tip Amount</div>
+                    <div class="tipdes2">/ person</div>
+                </div>
+                <div class="tipNum">
+                    &dollar;0.00
+                </div>
+            </div> 
+                <div class="totalAmount">
+                    <div class="totaldes">
+                        <div class="totaldes1">Total </div>
+                        <div class="totaldes2">/ person</div>
+                    </div>
+                    <div class="totalNum">
+                        &dollar;0.00
+                    </div>
+                </div>
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    <script src="scriplt1.js"></script>
+</body>
+
+</html>
