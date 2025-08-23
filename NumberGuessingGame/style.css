@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f, #3c3c6e);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container, .difficultyContainer {
+  background: #2c2c54;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.title, .headingDifficulty {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.modeDisplay {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.result {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.times {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.Guess button, .newgame, .buttons button {
+  background-color: #6c63ff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.Guess button:hover, .newgame:hover, .buttons button:hover {
+  background-color: #4e47d1;
+}
+
+.newgame {
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
