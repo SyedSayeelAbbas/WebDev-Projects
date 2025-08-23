@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sports Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form action="#">
+        <h1>Sports Survey Form</h1>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required />
+        </div>
+
+        <div class="form-group">
+            <p>Favorite Type of Sports:</p>
+            <label><input type="radio" name="sportType" value="Indoor" /> Indoor</label>
+            <label><input type="radio" name="sportType" value="Outdoor" /> Outdoor</label>
+            <label><input type="radio" name="sportType" value="Both" /> Both</label>
+        </div>
+
+        <div class="form-group">
+            <label for="FavSport">Favorite Sport to Watch:</label>
+            <input type="text" id="FavSport" name="FavSport" placeholder="Enter your favorite sport to watch" />
+
+            <label for="FavPlay">Favorite Sport to Play:</label>
+            <input type="text" id="FavPlay" name="FavPlay" placeholder="Enter your favorite sport to play" />
+
+            <label for="FavP">Favorite Sportsperson:</label>
+            <input type="text" id="FavP" name="FavP" placeholder="Enter your favorite sportsperson" />
+        </div>
+
+        <div class="form-group">
+            <label for="thoughts">Your Thoughts on Sports (Optional):</label>
+            <textarea id="thoughts" name="thoughts" rows="4" placeholder="Share your thoughts..."></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
