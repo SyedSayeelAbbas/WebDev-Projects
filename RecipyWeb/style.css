@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    background: radial-gradient(circle, rgba(189, 155, 167, 0.31) 0%, rgba(88, 93, 115, 0.5) 100%);
+}
+
+.navContainer {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(36, 27, 122, 1) 0%, rgba(9, 56, 121, 1) 39%, rgba(0, 212, 255, 1) 100%);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+}
+
+#navList {
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+}
+
+#navlogo {
+    font-size: 1.8rem;
+    color: azure;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+#navItems {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ContentBox {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.leftbox {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rightbox {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+}
+
+.rightbox img {
+    max-width: 300px;
+    border-radius: 8px;
+    transition: all 0.6s linear 0s;
+}
+
+.rightbox:hover {
+    transform: scale(1.05);
+}
+
+.FooterBox {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(36, 27, 122, 1) 0%, rgba(9, 56, 121, 1) 39%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterBox p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.rightbox .overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(113, 113, 113, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all 0.6s linear 0s;
+}
+
+.rightbox:hover .overlay {
+    opacity: 1;
+}
