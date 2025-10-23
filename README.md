@@ -25,7 +25,9 @@ Each project has its own folder with code and related assets.
 - **Survey Form** – A form to collect survey responses.  
 - **Tip Calculator** – A tool to calculate tips quickly.  
 - **To-Do List** – A task management app using JavaScript.  
-- **Tribute Page** – A tribute webpage for practicing layout and design.  
+- **Tribute Page** – A tribute webpage for practicing layout and design.
+- **Smart City** - A DashBoard For cehck and managing garbage collecting all over the city
+- **Shop Ease** - Now Check the panel of e commecrse 
 
 ---
 
